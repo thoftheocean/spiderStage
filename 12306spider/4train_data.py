@@ -128,35 +128,30 @@ def fetch_data(t, start, end,fd):
     url = "https://kyfw.12306.cn/otn/leftTicketPrice/query"
 
     # 获取12306票价查询验证码
-    url1 = 'https://kyfw.12306.cn/otn/passcodeNew/getPassCodeNew?module=other&rand=sjrand'
-    headers = {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'}
-    req = requests.get(url=url1, headers=headers, verify=False)
-    with open('img/code.jpg', 'wb') as f:
-        f.write(req.content)
-    code=raw_input('验证码：')
-    # print req.cookies
-    str=req.cookies['JSESSIONID']
-    cookies={'JSESSIONID':str}
-    print cookies
-    # print code
+    # url1 = 'https://kyfw.12306.cn/otn/passcodeNew/getPassCodeNew?module=other&rand=sjrand'
+    # headers = {
+    #     'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'}
+    # req = requests.get(url=url1, headers=headers, verify=False)
+    # with open('img/code.jpg', 'wb') as f:
+    #     f.write(req.content)
+    # code=raw_input('验证码：')
+    # # print req.cookies
+    # str=req.cookies['JSESSIONID']
+    # cookies={'JSESSIONID':str}
+    # print cookies
+    # # print code
 
-    # url='https://kyfw.12306.cn/otn/leftTicketPrice/init'
-    # req=requests.get(url,verify=False)
-    # pattern='<img src="(.*?)" onclick'
-    # import re
-    # pattern1=re.compile(pattern,re.S)
-    # items = re.findall(pattern1, req.content)
-    #
-    # print req.cookies['JSESSIONID']
-    # # print req.cookies['jsessionid']
-    # print items
-    # str= items[0]
-    # print str
-    # list=str.split(";")
-    # print list[0],list[1]
-    #
-    #
+    #正则表达式获取验证码
+    url = 'https://kyfw.12306.cn/otn/leftTicketPrice/init'
+    req = requests.get(url,verify=False)
+    pattern = '<img src="(.*?)" onclick'
+    import re
+    pattern1 = re.compile(pattern,re.S)
+    items = re.findall(pattern1, req.content)
+
+    # print req.cookies['jsessionid']
+
+
 
 
     #
