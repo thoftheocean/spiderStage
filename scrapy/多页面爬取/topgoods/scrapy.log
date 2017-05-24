@@ -1,0 +1,123 @@
+2017-05-05 15:07:49 [scrapy.utils.log] INFO: Scrapy 1.3.3 started (bot: topgoods)
+2017-05-05 15:07:49 [scrapy.utils.log] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'topgoods.spiders', 'SPIDER_MODULES': ['topgoods.spiders'], 'LOG_ENABLED': False, 'LOG_FILE': 'scrapy.log', 'BOT_NAME': 'topgoods'}
+2017-05-05 15:08:03 [scrapy.utils.log] INFO: Scrapy 1.3.3 started (bot: topgoods)
+2017-05-05 15:08:03 [scrapy.utils.log] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'topgoods.spiders', 'SPIDER_MODULES': ['topgoods.spiders'], 'LOG_FILE': 'scrapy.log', 'BOT_NAME': 'topgoods'}
+2017-05-05 15:08:03 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats']
+2017-05-05 15:08:03 [py.warnings] WARNING: d:\hxprogram\python2.7\lib\site-packages\scrapy\utils\deprecate.py:156: ScrapyDeprecationWarning: `scrapy.contrib.downloadermiddleware.httpproxy.HttpProxyMiddleware` class is deprecated, use `scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware` instead
+  ScrapyDeprecationWarning)
+
+2017-05-05 15:08:03 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2017-05-05 15:08:03 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2017-05-05 15:08:03 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2017-05-05 15:08:03 [scrapy.core.engine] INFO: Spider opened
+2017-05-05 15:08:03 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-05-05 15:08:03 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2017-05-05 15:08:03 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://list.tmall.com/search_product.htm?type=pc&totalPage=100&cat=50025135&sort=d&style=g&from=sn_1_cat-qp&active=1&jumpto=10> from <GET http://list.tmall.com/search_product.htm?type=pc&totalPage=100&cat=50025135&sort=d&style=g&from=sn_1_cat-qp&active=1&jumpto=10#J_Filter>
+2017-05-05 15:08:03 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://login.taobao.com/jump?target=https%3A%2F%2Flist.tmall.com%2Fsearch_product.htm%3Ftbpm%3D1%26type%3Dpc%26totalPage%3D100%26cat%3D50025135%26sort%3Dd%26style%3Dg%26from%3Dsn_1_cat-qp%26active%3D1%26jumpto%3D10> from <GET https://list.tmall.com/search_product.htm?type=pc&totalPage=100&cat=50025135&sort=d&style=g&from=sn_1_cat-qp&active=1&jumpto=10>
+2017-05-05 15:08:03 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://pass.tmall.com/add?cookie2=15cabad486a82bf11ed562aedaa5781a&t=0ba8e463fea9204ee235e920898a9427&_tb_token_=c5eb44b37338e&tmsc=1493968086197000&opi=10.103.188.167&pacc=lal8qDd0dw5YlfdUgWUzOA==&target=https%3A%2F%2Flist.tmall.com%2Fsearch_product.htm%3Ftbpm%3D1%26type%3Dpc%26totalPage%3D100%26cat%3D50025135%26sort%3Dd%26style%3Dg%26from%3Dsn_1_cat-qp%26active%3D1%26jumpto%3D10> from <GET https://login.taobao.com/jump?target=https%3A%2F%2Flist.tmall.com%2Fsearch_product.htm%3Ftbpm%3D1%26type%3Dpc%26totalPage%3D100%26cat%3D50025135%26sort%3Dd%26style%3Dg%26from%3Dsn_1_cat-qp%26active%3D1%26jumpto%3D10>
+2017-05-05 15:08:04 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://list.tmall.com/search_product.htm?tbpm=1&type=pc&totalPage=100&cat=50025135&sort=d&style=g&from=sn_1_cat-qp&active=1&jumpto=10> from <GET https://pass.tmall.com/add?cookie2=15cabad486a82bf11ed562aedaa5781a&t=0ba8e463fea9204ee235e920898a9427&_tb_token_=c5eb44b37338e&tmsc=1493968086197000&opi=10.103.188.167&pacc=lal8qDd0dw5YlfdUgWUzOA==&target=https%3A%2F%2Flist.tmall.com%2Fsearch_product.htm%3Ftbpm%3D1%26type%3Dpc%26totalPage%3D100%26cat%3D50025135%26sort%3Dd%26style%3Dg%26from%3Dsn_1_cat-qp%26active%3D1%26jumpto%3D10>
+2017-05-05 15:08:04 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://list.tmall.com/search_product.htm?type=pc&totalPage=100&cat=50025135&sort=d&style=g&from=sn_1_cat-qp&active=1&jumpto=10> from <GET https://list.tmall.com/search_product.htm?tbpm=1&type=pc&totalPage=100&cat=50025135&sort=d&style=g&from=sn_1_cat-qp&active=1&jumpto=10>
+2017-05-05 15:08:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://list.tmall.com/search_product.htm?type=pc&totalPage=100&cat=50025135&sort=d&style=g&from=sn_1_cat-qp&active=1&jumpto=10> (referer: None)
+2017-05-05 15:08:04 [tm_goods] DEBUG: List Page error--https://list.tmall.com/search_product.htm?type=pc&totalPage=100&cat=50025135&sort=d&style=g&from=sn_1_cat-qp&active=1&jumpto=10
+2017-05-05 15:08:04 [scrapy.core.engine] INFO: Closing spider (finished)
+2017-05-05 15:08:04 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 2472,
+ 'downloader/request_count': 6,
+ 'downloader/request_method_count/GET': 6,
+ 'downloader/response_bytes': 46507,
+ 'downloader/response_count': 6,
+ 'downloader/response_status_count/200': 1,
+ 'downloader/response_status_count/301': 1,
+ 'downloader/response_status_count/302': 4,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2017, 5, 5, 7, 8, 4, 885000),
+ 'log_count/DEBUG': 8,
+ 'log_count/INFO': 7,
+ 'log_count/WARNING': 1,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 6,
+ 'scheduler/dequeued/memory': 6,
+ 'scheduler/enqueued': 6,
+ 'scheduler/enqueued/memory': 6,
+ 'start_time': datetime.datetime(2017, 5, 5, 7, 8, 3, 266000)}
+2017-05-05 15:08:04 [scrapy.core.engine] INFO: Spider closed (finished)
+2017-05-05 15:08:35 [scrapy.utils.log] INFO: Scrapy 1.3.3 started (bot: topgoods)
+2017-05-05 15:08:35 [scrapy.utils.log] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'topgoods.spiders', 'FEED_URI': 'tmall.csv', 'SPIDER_MODULES': ['topgoods.spiders'], 'BOT_NAME': 'topgoods', 'FEED_FORMAT': 'csv', 'LOG_FILE': 'scrapy.log'}
+2017-05-05 15:08:35 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats']
+2017-05-05 15:08:35 [py.warnings] WARNING: d:\hxprogram\python2.7\lib\site-packages\scrapy\utils\deprecate.py:156: ScrapyDeprecationWarning: `scrapy.contrib.downloadermiddleware.httpproxy.HttpProxyMiddleware` class is deprecated, use `scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware` instead
+  ScrapyDeprecationWarning)
+
+2017-05-05 15:08:35 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2017-05-05 15:08:35 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2017-05-05 15:08:35 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2017-05-05 15:08:35 [scrapy.core.engine] INFO: Spider opened
+2017-05-05 15:08:35 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-05-05 15:08:35 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2017-05-05 15:08:35 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://list.tmall.com/search_product.htm?type=pc&totalPage=100&cat=50025135&sort=d&style=g&from=sn_1_cat-qp&active=1&jumpto=10> from <GET http://list.tmall.com/search_product.htm?type=pc&totalPage=100&cat=50025135&sort=d&style=g&from=sn_1_cat-qp&active=1&jumpto=10#J_Filter>
+2017-05-05 15:08:35 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://login.taobao.com/jump?target=https%3A%2F%2Flist.tmall.com%2Fsearch_product.htm%3Ftbpm%3D1%26type%3Dpc%26totalPage%3D100%26cat%3D50025135%26sort%3Dd%26style%3Dg%26from%3Dsn_1_cat-qp%26active%3D1%26jumpto%3D10> from <GET https://list.tmall.com/search_product.htm?type=pc&totalPage=100&cat=50025135&sort=d&style=g&from=sn_1_cat-qp&active=1&jumpto=10>
+2017-05-05 15:08:36 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://pass.tmall.com/add?cookie2=1a596bb998450e8555e70ce0cf72bda7&t=a9d5fc60f7fdb8ce312a73f0db4d0b21&_tb_token_=74e413cfeb384&tmsc=1493968118516000&opi=10.103.196.35&pacc=p0CQaYYOs-YBuh7M2NHaBw==&target=https%3A%2F%2Flist.tmall.com%2Fsearch_product.htm%3Ftbpm%3D1%26type%3Dpc%26totalPage%3D100%26cat%3D50025135%26sort%3Dd%26style%3Dg%26from%3Dsn_1_cat-qp%26active%3D1%26jumpto%3D10> from <GET https://login.taobao.com/jump?target=https%3A%2F%2Flist.tmall.com%2Fsearch_product.htm%3Ftbpm%3D1%26type%3Dpc%26totalPage%3D100%26cat%3D50025135%26sort%3Dd%26style%3Dg%26from%3Dsn_1_cat-qp%26active%3D1%26jumpto%3D10>
+2017-05-05 15:08:36 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://list.tmall.com/search_product.htm?tbpm=1&type=pc&totalPage=100&cat=50025135&sort=d&style=g&from=sn_1_cat-qp&active=1&jumpto=10> from <GET https://pass.tmall.com/add?cookie2=1a596bb998450e8555e70ce0cf72bda7&t=a9d5fc60f7fdb8ce312a73f0db4d0b21&_tb_token_=74e413cfeb384&tmsc=1493968118516000&opi=10.103.196.35&pacc=p0CQaYYOs-YBuh7M2NHaBw==&target=https%3A%2F%2Flist.tmall.com%2Fsearch_product.htm%3Ftbpm%3D1%26type%3Dpc%26totalPage%3D100%26cat%3D50025135%26sort%3Dd%26style%3Dg%26from%3Dsn_1_cat-qp%26active%3D1%26jumpto%3D10>
+2017-05-05 15:08:36 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://list.tmall.com/search_product.htm?type=pc&totalPage=100&cat=50025135&sort=d&style=g&from=sn_1_cat-qp&active=1&jumpto=10> from <GET https://list.tmall.com/search_product.htm?tbpm=1&type=pc&totalPage=100&cat=50025135&sort=d&style=g&from=sn_1_cat-qp&active=1&jumpto=10>
+2017-05-05 15:08:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://list.tmall.com/search_product.htm?type=pc&totalPage=100&cat=50025135&sort=d&style=g&from=sn_1_cat-qp&active=1&jumpto=10> (referer: None)
+2017-05-05 15:08:37 [tm_goods] DEBUG: List Page error--https://list.tmall.com/search_product.htm?type=pc&totalPage=100&cat=50025135&sort=d&style=g&from=sn_1_cat-qp&active=1&jumpto=10
+2017-05-05 15:08:37 [scrapy.core.engine] INFO: Closing spider (finished)
+2017-05-05 15:08:37 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 2471,
+ 'downloader/request_count': 6,
+ 'downloader/request_method_count/GET': 6,
+ 'downloader/response_bytes': 46473,
+ 'downloader/response_count': 6,
+ 'downloader/response_status_count/200': 1,
+ 'downloader/response_status_count/301': 1,
+ 'downloader/response_status_count/302': 4,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2017, 5, 5, 7, 8, 37, 249000),
+ 'log_count/DEBUG': 8,
+ 'log_count/INFO': 7,
+ 'log_count/WARNING': 1,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 6,
+ 'scheduler/dequeued/memory': 6,
+ 'scheduler/enqueued': 6,
+ 'scheduler/enqueued/memory': 6,
+ 'start_time': datetime.datetime(2017, 5, 5, 7, 8, 35, 516000)}
+2017-05-05 15:08:37 [scrapy.core.engine] INFO: Spider closed (finished)

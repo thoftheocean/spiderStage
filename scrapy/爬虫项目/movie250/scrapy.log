@@ -1,0 +1,696 @@
+2017-05-08 17:01:04 [scrapy.utils.log] INFO: Scrapy 1.3.3 started (bot: movie250)
+2017-05-08 17:01:04 [scrapy.utils.log] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'movie250.spiders', 'FEED_URI': 'items.json', 'SPIDER_MODULES': ['movie250.spiders'], 'BOT_NAME': 'movie250', 'ROBOTSTXT_OBEY': True, 'FEED_FORMAT': 'json', 'LOG_FILE': 'scrapy.log'}
+2017-05-08 17:01:04 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats']
+2017-05-08 17:01:04 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'movie250.RotateUserAgentMiddleware.RotateUserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2017-05-08 17:01:04 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2017-05-08 17:01:04 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2017-05-08 17:01:04 [scrapy.core.engine] INFO: Spider opened
+2017-05-08 17:01:04 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-05-08 17:01:04 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2017-05-08 17:01:05 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://movie.douban.com/robots.txt> from <GET http://movie.douban.com/robots.txt>
+2017-05-08 17:01:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/robots.txt> (referer: None)
+2017-05-08 17:01:05 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://movie.douban.com/top250/> from <GET http://movie.douban.com/top250/>
+2017-05-08 17:01:05 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://movie.douban.com/top250> from <GET https://movie.douban.com/top250/>
+2017-05-08 17:01:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/top250> (referer: None)
+2017-05-08 17:01:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250>
+{'link': [u'https://movie.douban.com/subject/1292052/'],
+ 'quote': [u'\u5e0c\u671b\u8ba9\u4eba\u81ea\u7531\u3002'],
+ 'rank': [u'1'],
+ 'rate': [u'9.6', u'819309\u4eba\u8bc4\u4ef7'],
+ 'star': [],
+ 'title': [u'\u8096\u7533\u514b\u7684\u6551\u8d4e']}
+2017-05-08 17:01:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250>
+{'link': [u'https://movie.douban.com/subject/1295644/'],
+ 'quote': [u'\u602a\u8700\u9ecd\u548c\u5c0f\u841d\u8389\u4e0d\u5f97\u4e0d\u8bf4\u7684\u6545\u4e8b\u3002'],
+ 'rank': [u'2'],
+ 'rate': [u'9.4', u'786565\u4eba\u8bc4\u4ef7'],
+ 'star': [],
+ 'title': [u'\u8fd9\u4e2a\u6740\u624b\u4e0d\u592a\u51b7']}
+2017-05-08 17:01:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250>
+{'link': [u'https://movie.douban.com/subject/1291546/'],
+ 'quote': [u'\u98ce\u534e\u7edd\u4ee3\u3002'],
+ 'rank': [u'3'],
+ 'rate': [u'9.5', u'584466\u4eba\u8bc4\u4ef7'],
+ 'star': [],
+ 'title': [u'\u9738\u738b\u522b\u59ec']}
+2017-05-08 17:01:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250>
+{'link': [u'https://movie.douban.com/subject/1292720/'],
+ 'quote': [u'\u4e00\u90e8\u7f8e\u56fd\u8fd1\u73b0\u4ee3\u53f2\u3002'],
+ 'rank': [u'4'],
+ 'rate': [u'9.4', u'674860\u4eba\u8bc4\u4ef7'],
+ 'star': [],
+ 'title': [u'\u963f\u7518\u6b63\u4f20']}
+2017-05-08 17:01:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250>
+{'link': [u'https://movie.douban.com/subject/1292063/'],
+ 'quote': [u'\u6700\u7f8e\u7684\u8c0e\u8a00\u3002'],
+ 'rank': [u'5'],
+ 'rate': [u'9.5', u'391222\u4eba\u8bc4\u4ef7'],
+ 'star': [],
+ 'title': [u'\u7f8e\u4e3d\u4eba\u751f']}
+2017-05-08 17:01:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250>
+{'link': [u'https://movie.douban.com/subject/1291561/'],
+ 'quote': [u'\u6700\u597d\u7684\u5bab\u5d0e\u9a8f\uff0c\u6700\u597d\u7684\u4e45\u77f3\u8ba9\u3002 '],
+ 'rank': [u'6'],
+ 'rate': [u'9.2', u'626584\u4eba\u8bc4\u4ef7'],
+ 'star': [],
+ 'title': [u'\u5343\u4e0e\u5343\u5bfb']}
+2017-05-08 17:01:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250>
+{'link': [u'https://movie.douban.com/subject/1295124/'],
+ 'quote': [u'\u62ef\u6551\u4e00\u4e2a\u4eba\uff0c\u5c31\u662f\u62ef\u6551\u6574\u4e2a\u4e16\u754c\u3002'],
+ 'rank': [u'7'],
+ 'rate': [u'9.4', u'362308\u4eba\u8bc4\u4ef7'],
+ 'star': [],
+ 'title': [u'\u8f9b\u5fb7\u52d2\u7684\u540d\u5355']}
+2017-05-08 17:01:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250>
+{'link': [u'https://movie.douban.com/subject/1292722/'],
+ 'quote': [u'\u5931\u53bb\u7684\u624d\u662f\u6c38\u6052\u7684\u3002 '],
+ 'rank': [u'8'],
+ 'rate': [u'9.2', u'621023\u4eba\u8bc4\u4ef7'],
+ 'star': [],
+ 'title': [u'\u6cf0\u5766\u5c3c\u514b\u53f7']}
+2017-05-08 17:01:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250>
+{'link': [u'https://movie.douban.com/subject/3541415/'],
+ 'quote': [u'\u8bfa\u5170\u7ed9\u4e86\u6211\u4eec\u4e00\u573a\u65e0\u6cd5\u76d7\u53d6\u7684\u68a6\u3002'],
+ 'rank': [u'9'],
+ 'rate': [u'9.2', u'728997\u4eba\u8bc4\u4ef7'],
+ 'star': [],
+ 'title': [u'\u76d7\u68a6\u7a7a\u95f4']}
+2017-05-08 17:01:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250>
+{'link': [u'https://movie.douban.com/subject/2131459/'],
+ 'quote': [u'\u5c0f\u74e6\u529b\uff0c\u5927\u4eba\u751f\u3002'],
+ 'rank': [u'10'],
+ 'rate': [u'9.3', u'478741\u4eba\u8bc4\u4ef7'],
+ 'star': [],
+ 'title': [u'\u673a\u5668\u4eba\u603b\u52a8\u5458']}
+2017-05-08 17:01:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250>
+{'link': [u'https://movie.douban.com/subject/1292001/'],
+ 'quote': [u'\u6bcf\u4e2a\u4eba\u90fd\u8981\u8d70\u4e00\u6761\u81ea\u5df1\u575a\u5b9a\u4e86\u7684\u8def\uff0c\u5c31\u7b97\u662f\u7c89\u8eab\u788e\u9aa8\u3002 '],
+ 'rank': [u'11'],
+ 'rate': [u'9.2', u'574355\u4eba\u8bc4\u4ef7'],
+ 'star': [],
+ 'title': [u'\u6d77\u4e0a\u94a2\u7434\u5e08']}
+2017-05-08 17:01:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250>
+{'link': [u'https://movie.douban.com/subject/3793023/'],
+ 'quote': [u'\u82f1\u4fca\u7248\u61a8\u8c46\uff0c\u9ad8\u60c5\u5546\u7248\u8c22\u8033\u6735\u3002'],
+ 'rank': [u'12'],
+ 'rate': [u'9.1', u'634063\u4eba\u8bc4\u4ef7'],
+ 'star': [],
+ 'title': [u'\u4e09\u50bb\u5927\u95f9\u5b9d\u83b1\u575e']}
+2017-05-08 17:01:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250>
+{'link': [u'https://movie.douban.com/subject/3011091/'],
+ 'quote': [u'\u6c38\u8fdc\u90fd\u4e0d\u80fd\u5fd8\u8bb0\u4f60\u6240\u7231\u7684\u4eba\u3002'],
+ 'rank': [u'13'],
+ 'rate': [u'9.2', u'427038\u4eba\u8bc4\u4ef7'],
+ 'star': [],
+ 'title': [u'\u5fe0\u72ac\u516b\u516c\u7684\u6545\u4e8b']}
+2017-05-08 17:01:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250>
+{'link': [u'https://movie.douban.com/subject/1291549/'],
+ 'quote': [u'\u5929\u7c41\u4e00\u822c\u7684\u7ae5\u58f0\uff0c\u662f\u6700\u63a5\u8fd1\u4e0a\u5e1d\u7684\u5b58\u5728\u3002 '],
+ 'rank': [u'14'],
+ 'rate': [u'9.2', u'430010\u4eba\u8bc4\u4ef7'],
+ 'star': [],
+ 'title': [u'\u653e\u725b\u73ed\u7684\u6625\u5929']}
+2017-05-08 17:01:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250>
+{'link': [u'https://movie.douban.com/subject/1292213/'],
+ 'quote': [u'\u4e00\u751f\u6240\u7231\u3002'],
+ 'rank': [u'15'],
+ 'rate': [u'9.2', u'461830\u4eba\u8bc4\u4ef7'],
+ 'star': [],
+ 'title': [u'\u5927\u8bdd\u897f\u6e38\u4e4b\u5927\u5723\u5a36\u4eb2']}
+2017-05-08 17:01:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250>
+{'link': [u'https://movie.douban.com/subject/1291841/'],
+ 'quote': [u'\u5343\u4e07\u4e0d\u8981\u8bb0\u6068\u4f60\u7684\u5bf9\u624b\uff0c\u8fd9\u6837\u4f1a\u8ba9\u4f60\u5931\u53bb\u7406\u667a\u3002'],
+ 'rank': [u'16'],
+ 'rate': [u'9.2', u'327887\u4eba\u8bc4\u4ef7'],
+ 'star': [],
+ 'title': [u'\u6559\u7236']}
+2017-05-08 17:01:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250>
+{'link': [u'https://movie.douban.com/subject/1291560/'],
+ 'quote': [u'\u4eba\u4eba\u5fc3\u4e2d\u90fd\u6709\u4e2a\u9f99\u732b\uff0c\u7ae5\u5e74\u5c31\u6c38\u8fdc\u4e0d\u4f1a\u6d88\u5931\u3002'],
+ 'rank': [u'17'],
+ 'rate': [u'9.1', u'398824\u4eba\u8bc4\u4ef7'],
+ 'star': [],
+ 'title': [u'\u9f99\u732b']}
+2017-05-08 17:01:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250>
+{'link': [u'https://movie.douban.com/subject/1292064/'],
+ 'quote': [u'\u5982\u679c\u518d\u4e5f\u4e0d\u80fd\u89c1\u5230\u4f60\uff0c\u795d\u4f60\u65e9\u5b89\uff0c\u5348\u5b89\uff0c\u665a\u5b89\u3002'],
+ 'rank': [u'18'],
+ 'rate': [u'9.0', u'425293\u4eba\u8bc4\u4ef7'],
+ 'star': [],
+ 'title': [u'\u695a\u95e8\u7684\u4e16\u754c']}
+2017-05-08 17:01:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250>
+{'link': [u'https://movie.douban.com/subject/1300267/'],
+ 'quote': [u'Tomorrow is another day.'],
+ 'rank': [u'19'],
+ 'rate': [u'9.2', u'259922\u4eba\u8bc4\u4ef7'],
+ 'star': [],
+ 'title': [u'\u4e71\u4e16\u4f73\u4eba']}
+2017-05-08 17:01:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250>
+{'link': [u'https://movie.douban.com/subject/1291828/'],
+ 'quote': [u'\u90a3\u4e9b\u543b\u620f\uff0c\u90a3\u4e9b\u9752\u6625\uff0c\u90fd\u5728\u5f71\u9662\u7684\u9ed1\u6697\u91cc\u88ab\u6cea\u6c34\u51b2\u5237\u5f97\u65e0\u6bd4\u6e05\u6670\u3002'],
+ 'rank': [u'20'],
+ 'rate': [u'9.1', u'296906\u4eba\u8bc4\u4ef7'],
+ 'star': [],
+ 'title': [u'\u5929\u5802\u7535\u5f71\u9662']}
+2017-05-08 17:01:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250>
+{'link': [u'https://movie.douban.com/subject/1849031/'],
+ 'quote': [u'\u5e73\u6c11\u52b1\u5fd7\u7247\u3002 '],
+ 'rank': [u'21'],
+ 'rate': [u'8.9', u'514888\u4eba\u8bc4\u4ef7'],
+ 'star': [],
+ 'title': [u'\u5f53\u5e78\u798f\u6765\u6572\u95e8']}
+2017-05-08 17:01:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250>
+{'link': [u'https://movie.douban.com/subject/6786002/'],
+ 'quote': [u'\u6ee1\u6ee1\u6e29\u60c5\u7684\u9ad8\u96c5\u559c\u5267\u3002'],
+ 'rank': [u'22'],
+ 'rate': [u'9.1', u'348369\u4eba\u8bc4\u4ef7'],
+ 'star': [],
+ 'title': [u'\u89e6\u4e0d\u53ef\u53ca']}
+2017-05-08 17:01:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250>
+{'link': [u'https://movie.douban.com/subject/1292000/'],
+ 'quote': [u'\u90aa\u6076\u4e0e\u5e73\u5eb8\u86f0\u4f0f\u4e8e\u540c\u4e00\u4e2a\u6bcd\u4f53\uff0c\u5728\u7279\u5b9a\u7684\u65f6\u95f4\u4e92\u76f8\u5bf9\u5cd9\u3002'],
+ 'rank': [u'23'],
+ 'rate': [u'9.0', u'389715\u4eba\u8bc4\u4ef7'],
+ 'star': [],
+ 'title': [u'\u640f\u51fb\u4ff1\u4e50\u90e8']}
+2017-05-08 17:01:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250>
+{'link': [u'https://movie.douban.com/subject/1293182/'],
+ 'quote': [u'1957\u5e74\u7684\u7406\u60f3\u4e3b\u4e49\u3002 '],
+ 'rank': [u'24'],
+ 'rate': [u'9.3', u'161866\u4eba\u8bc4\u4ef7'],
+ 'star': [],
+ 'title': [u'\u5341\u4e8c\u6012\u6c49']}
+2017-05-08 17:01:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250>
+{'link': [u'https://movie.douban.com/subject/1307914/'],
+ 'quote': [u'\u9999\u6e2f\u7535\u5f71\u53f2\u4e0a\u6c38\u4e0d\u8fc7\u65f6\u7684\u6770\u4f5c\u3002'],
+ 'rank': [u'25'],
+ 'rate': [u'9.0', u'376976\u4eba\u8bc4\u4ef7'],
+ 'star': [],
+ 'title': [u'\u65e0\u95f4\u9053']}
+2017-05-08 17:01:05 [scrapy.core.engine] INFO: Closing spider (finished)
+2017-05-08 17:01:05 [scrapy.extensions.feedexport] INFO: Stored json feed (25 items) in: items.json
+2017-05-08 17:01:05 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 1472,
+ 'downloader/request_count': 5,
+ 'downloader/request_method_count/GET': 5,
+ 'downloader/response_bytes': 14520,
+ 'downloader/response_count': 5,
+ 'downloader/response_status_count/200': 2,
+ 'downloader/response_status_count/301': 3,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2017, 5, 8, 9, 1, 5, 842000),
+ 'item_scraped_count': 25,
+ 'log_count/DEBUG': 31,
+ 'log_count/INFO': 8,
+ 'response_received_count': 2,
+ 'scheduler/dequeued': 3,
+ 'scheduler/dequeued/memory': 3,
+ 'scheduler/enqueued': 3,
+ 'scheduler/enqueued/memory': 3,
+ 'start_time': datetime.datetime(2017, 5, 8, 9, 1, 4, 992000)}
+2017-05-08 17:01:05 [scrapy.core.engine] INFO: Spider closed (finished)
+2017-05-08 17:01:38 [scrapy.utils.log] INFO: Scrapy 1.3.3 started (bot: movie250)
+2017-05-08 17:01:38 [scrapy.utils.log] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'movie250.spiders', 'FEED_URI': 'items.csv', 'SPIDER_MODULES': ['movie250.spiders'], 'BOT_NAME': 'movie250', 'ROBOTSTXT_OBEY': True, 'FEED_FORMAT': 'csv', 'LOG_FILE': 'scrapy.log'}
+2017-05-08 17:01:39 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats']
+2017-05-08 17:01:39 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'movie250.RotateUserAgentMiddleware.RotateUserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2017-05-08 17:01:39 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2017-05-08 17:01:39 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2017-05-08 17:01:39 [scrapy.core.engine] INFO: Spider opened
+2017-05-08 17:01:39 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-05-08 17:01:39 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2017-05-08 17:01:39 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://movie.douban.com/robots.txt> from <GET http://movie.douban.com/robots.txt>
+2017-05-08 17:01:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/robots.txt> (referer: None)
+2017-05-08 17:01:39 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://movie.douban.com/top250/> from <GET http://movie.douban.com/top250/>
+2017-05-08 17:01:39 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://movie.douban.com/top250> from <GET https://movie.douban.com/top250/>
+2017-05-08 17:01:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/top250> (referer: None)
+2017-05-08 17:01:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250>
+{'link': [u'https://movie.douban.com/subject/1292052/'],
+ 'quote': [u'\u5e0c\u671b\u8ba9\u4eba\u81ea\u7531\u3002'],
+ 'rank': [u'1'],
+ 'rate': [u'9.6', u'819309\u4eba\u8bc4\u4ef7'],
+ 'star': [],
+ 'title': [u'\u8096\u7533\u514b\u7684\u6551\u8d4e']}
+2017-05-08 17:01:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250>
+{'link': [u'https://movie.douban.com/subject/1295644/'],
+ 'quote': [u'\u602a\u8700\u9ecd\u548c\u5c0f\u841d\u8389\u4e0d\u5f97\u4e0d\u8bf4\u7684\u6545\u4e8b\u3002'],
+ 'rank': [u'2'],
+ 'rate': [u'9.4', u'786565\u4eba\u8bc4\u4ef7'],
+ 'star': [],
+ 'title': [u'\u8fd9\u4e2a\u6740\u624b\u4e0d\u592a\u51b7']}
+2017-05-08 17:01:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250>
+{'link': [u'https://movie.douban.com/subject/1291546/'],
+ 'quote': [u'\u98ce\u534e\u7edd\u4ee3\u3002'],
+ 'rank': [u'3'],
+ 'rate': [u'9.5', u'584466\u4eba\u8bc4\u4ef7'],
+ 'star': [],
+ 'title': [u'\u9738\u738b\u522b\u59ec']}
+2017-05-08 17:01:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250>
+{'link': [u'https://movie.douban.com/subject/1292720/'],
+ 'quote': [u'\u4e00\u90e8\u7f8e\u56fd\u8fd1\u73b0\u4ee3\u53f2\u3002'],
+ 'rank': [u'4'],
+ 'rate': [u'9.4', u'674860\u4eba\u8bc4\u4ef7'],
+ 'star': [],
+ 'title': [u'\u963f\u7518\u6b63\u4f20']}
+2017-05-08 17:01:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250>
+{'link': [u'https://movie.douban.com/subject/1292063/'],
+ 'quote': [u'\u6700\u7f8e\u7684\u8c0e\u8a00\u3002'],
+ 'rank': [u'5'],
+ 'rate': [u'9.5', u'391222\u4eba\u8bc4\u4ef7'],
+ 'star': [],
+ 'title': [u'\u7f8e\u4e3d\u4eba\u751f']}
+2017-05-08 17:01:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250>
+{'link': [u'https://movie.douban.com/subject/1291561/'],
+ 'quote': [u'\u6700\u597d\u7684\u5bab\u5d0e\u9a8f\uff0c\u6700\u597d\u7684\u4e45\u77f3\u8ba9\u3002 '],
+ 'rank': [u'6'],
+ 'rate': [u'9.2', u'626584\u4eba\u8bc4\u4ef7'],
+ 'star': [],
+ 'title': [u'\u5343\u4e0e\u5343\u5bfb']}
+2017-05-08 17:01:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250>
+{'link': [u'https://movie.douban.com/subject/1295124/'],
+ 'quote': [u'\u62ef\u6551\u4e00\u4e2a\u4eba\uff0c\u5c31\u662f\u62ef\u6551\u6574\u4e2a\u4e16\u754c\u3002'],
+ 'rank': [u'7'],
+ 'rate': [u'9.4', u'362308\u4eba\u8bc4\u4ef7'],
+ 'star': [],
+ 'title': [u'\u8f9b\u5fb7\u52d2\u7684\u540d\u5355']}
+2017-05-08 17:01:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250>
+{'link': [u'https://movie.douban.com/subject/1292722/'],
+ 'quote': [u'\u5931\u53bb\u7684\u624d\u662f\u6c38\u6052\u7684\u3002 '],
+ 'rank': [u'8'],
+ 'rate': [u'9.2', u'621023\u4eba\u8bc4\u4ef7'],
+ 'star': [],
+ 'title': [u'\u6cf0\u5766\u5c3c\u514b\u53f7']}
+2017-05-08 17:01:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250>
+{'link': [u'https://movie.douban.com/subject/3541415/'],
+ 'quote': [u'\u8bfa\u5170\u7ed9\u4e86\u6211\u4eec\u4e00\u573a\u65e0\u6cd5\u76d7\u53d6\u7684\u68a6\u3002'],
+ 'rank': [u'9'],
+ 'rate': [u'9.2', u'728997\u4eba\u8bc4\u4ef7'],
+ 'star': [],
+ 'title': [u'\u76d7\u68a6\u7a7a\u95f4']}
+2017-05-08 17:01:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250>
+{'link': [u'https://movie.douban.com/subject/2131459/'],
+ 'quote': [u'\u5c0f\u74e6\u529b\uff0c\u5927\u4eba\u751f\u3002'],
+ 'rank': [u'10'],
+ 'rate': [u'9.3', u'478741\u4eba\u8bc4\u4ef7'],
+ 'star': [],
+ 'title': [u'\u673a\u5668\u4eba\u603b\u52a8\u5458']}
+2017-05-08 17:01:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250>
+{'link': [u'https://movie.douban.com/subject/1292001/'],
+ 'quote': [u'\u6bcf\u4e2a\u4eba\u90fd\u8981\u8d70\u4e00\u6761\u81ea\u5df1\u575a\u5b9a\u4e86\u7684\u8def\uff0c\u5c31\u7b97\u662f\u7c89\u8eab\u788e\u9aa8\u3002 '],
+ 'rank': [u'11'],
+ 'rate': [u'9.2', u'574355\u4eba\u8bc4\u4ef7'],
+ 'star': [],
+ 'title': [u'\u6d77\u4e0a\u94a2\u7434\u5e08']}
+2017-05-08 17:01:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250>
+{'link': [u'https://movie.douban.com/subject/3793023/'],
+ 'quote': [u'\u82f1\u4fca\u7248\u61a8\u8c46\uff0c\u9ad8\u60c5\u5546\u7248\u8c22\u8033\u6735\u3002'],
+ 'rank': [u'12'],
+ 'rate': [u'9.1', u'634063\u4eba\u8bc4\u4ef7'],
+ 'star': [],
+ 'title': [u'\u4e09\u50bb\u5927\u95f9\u5b9d\u83b1\u575e']}
+2017-05-08 17:01:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250>
+{'link': [u'https://movie.douban.com/subject/3011091/'],
+ 'quote': [u'\u6c38\u8fdc\u90fd\u4e0d\u80fd\u5fd8\u8bb0\u4f60\u6240\u7231\u7684\u4eba\u3002'],
+ 'rank': [u'13'],
+ 'rate': [u'9.2', u'427038\u4eba\u8bc4\u4ef7'],
+ 'star': [],
+ 'title': [u'\u5fe0\u72ac\u516b\u516c\u7684\u6545\u4e8b']}
+2017-05-08 17:01:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250>
+{'link': [u'https://movie.douban.com/subject/1291549/'],
+ 'quote': [u'\u5929\u7c41\u4e00\u822c\u7684\u7ae5\u58f0\uff0c\u662f\u6700\u63a5\u8fd1\u4e0a\u5e1d\u7684\u5b58\u5728\u3002 '],
+ 'rank': [u'14'],
+ 'rate': [u'9.2', u'430010\u4eba\u8bc4\u4ef7'],
+ 'star': [],
+ 'title': [u'\u653e\u725b\u73ed\u7684\u6625\u5929']}
+2017-05-08 17:01:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250>
+{'link': [u'https://movie.douban.com/subject/1292213/'],
+ 'quote': [u'\u4e00\u751f\u6240\u7231\u3002'],
+ 'rank': [u'15'],
+ 'rate': [u'9.2', u'461830\u4eba\u8bc4\u4ef7'],
+ 'star': [],
+ 'title': [u'\u5927\u8bdd\u897f\u6e38\u4e4b\u5927\u5723\u5a36\u4eb2']}
+2017-05-08 17:01:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250>
+{'link': [u'https://movie.douban.com/subject/1291841/'],
+ 'quote': [u'\u5343\u4e07\u4e0d\u8981\u8bb0\u6068\u4f60\u7684\u5bf9\u624b\uff0c\u8fd9\u6837\u4f1a\u8ba9\u4f60\u5931\u53bb\u7406\u667a\u3002'],
+ 'rank': [u'16'],
+ 'rate': [u'9.2', u'327887\u4eba\u8bc4\u4ef7'],
+ 'star': [],
+ 'title': [u'\u6559\u7236']}
+2017-05-08 17:01:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250>
+{'link': [u'https://movie.douban.com/subject/1291560/'],
+ 'quote': [u'\u4eba\u4eba\u5fc3\u4e2d\u90fd\u6709\u4e2a\u9f99\u732b\uff0c\u7ae5\u5e74\u5c31\u6c38\u8fdc\u4e0d\u4f1a\u6d88\u5931\u3002'],
+ 'rank': [u'17'],
+ 'rate': [u'9.1', u'398824\u4eba\u8bc4\u4ef7'],
+ 'star': [],
+ 'title': [u'\u9f99\u732b']}
+2017-05-08 17:01:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250>
+{'link': [u'https://movie.douban.com/subject/1292064/'],
+ 'quote': [u'\u5982\u679c\u518d\u4e5f\u4e0d\u80fd\u89c1\u5230\u4f60\uff0c\u795d\u4f60\u65e9\u5b89\uff0c\u5348\u5b89\uff0c\u665a\u5b89\u3002'],
+ 'rank': [u'18'],
+ 'rate': [u'9.0', u'425293\u4eba\u8bc4\u4ef7'],
+ 'star': [],
+ 'title': [u'\u695a\u95e8\u7684\u4e16\u754c']}
+2017-05-08 17:01:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250>
+{'link': [u'https://movie.douban.com/subject/1300267/'],
+ 'quote': [u'Tomorrow is another day.'],
+ 'rank': [u'19'],
+ 'rate': [u'9.2', u'259922\u4eba\u8bc4\u4ef7'],
+ 'star': [],
+ 'title': [u'\u4e71\u4e16\u4f73\u4eba']}
+2017-05-08 17:01:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250>
+{'link': [u'https://movie.douban.com/subject/1291828/'],
+ 'quote': [u'\u90a3\u4e9b\u543b\u620f\uff0c\u90a3\u4e9b\u9752\u6625\uff0c\u90fd\u5728\u5f71\u9662\u7684\u9ed1\u6697\u91cc\u88ab\u6cea\u6c34\u51b2\u5237\u5f97\u65e0\u6bd4\u6e05\u6670\u3002'],
+ 'rank': [u'20'],
+ 'rate': [u'9.1', u'296906\u4eba\u8bc4\u4ef7'],
+ 'star': [],
+ 'title': [u'\u5929\u5802\u7535\u5f71\u9662']}
+2017-05-08 17:01:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250>
+{'link': [u'https://movie.douban.com/subject/1849031/'],
+ 'quote': [u'\u5e73\u6c11\u52b1\u5fd7\u7247\u3002 '],
+ 'rank': [u'21'],
+ 'rate': [u'8.9', u'514888\u4eba\u8bc4\u4ef7'],
+ 'star': [],
+ 'title': [u'\u5f53\u5e78\u798f\u6765\u6572\u95e8']}
+2017-05-08 17:01:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250>
+{'link': [u'https://movie.douban.com/subject/6786002/'],
+ 'quote': [u'\u6ee1\u6ee1\u6e29\u60c5\u7684\u9ad8\u96c5\u559c\u5267\u3002'],
+ 'rank': [u'22'],
+ 'rate': [u'9.1', u'348369\u4eba\u8bc4\u4ef7'],
+ 'star': [],
+ 'title': [u'\u89e6\u4e0d\u53ef\u53ca']}
+2017-05-08 17:01:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250>
+{'link': [u'https://movie.douban.com/subject/1292000/'],
+ 'quote': [u'\u90aa\u6076\u4e0e\u5e73\u5eb8\u86f0\u4f0f\u4e8e\u540c\u4e00\u4e2a\u6bcd\u4f53\uff0c\u5728\u7279\u5b9a\u7684\u65f6\u95f4\u4e92\u76f8\u5bf9\u5cd9\u3002'],
+ 'rank': [u'23'],
+ 'rate': [u'9.0', u'389715\u4eba\u8bc4\u4ef7'],
+ 'star': [],
+ 'title': [u'\u640f\u51fb\u4ff1\u4e50\u90e8']}
+2017-05-08 17:01:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250>
+{'link': [u'https://movie.douban.com/subject/1293182/'],
+ 'quote': [u'1957\u5e74\u7684\u7406\u60f3\u4e3b\u4e49\u3002 '],
+ 'rank': [u'24'],
+ 'rate': [u'9.3', u'161866\u4eba\u8bc4\u4ef7'],
+ 'star': [],
+ 'title': [u'\u5341\u4e8c\u6012\u6c49']}
+2017-05-08 17:01:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250>
+{'link': [u'https://movie.douban.com/subject/1307914/'],
+ 'quote': [u'\u9999\u6e2f\u7535\u5f71\u53f2\u4e0a\u6c38\u4e0d\u8fc7\u65f6\u7684\u6770\u4f5c\u3002'],
+ 'rank': [u'25'],
+ 'rate': [u'9.0', u'376976\u4eba\u8bc4\u4ef7'],
+ 'star': [],
+ 'title': [u'\u65e0\u95f4\u9053']}
+2017-05-08 17:01:40 [scrapy.core.engine] INFO: Closing spider (finished)
+2017-05-08 17:01:40 [scrapy.extensions.feedexport] INFO: Stored csv feed (25 items) in: items.csv
+2017-05-08 17:01:40 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 1474,
+ 'downloader/request_count': 5,
+ 'downloader/request_method_count/GET': 5,
+ 'downloader/response_bytes': 14525,
+ 'downloader/response_count': 5,
+ 'downloader/response_status_count/200': 2,
+ 'downloader/response_status_count/301': 3,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2017, 5, 8, 9, 1, 40, 69000),
+ 'item_scraped_count': 25,
+ 'log_count/DEBUG': 31,
+ 'log_count/INFO': 8,
+ 'response_received_count': 2,
+ 'scheduler/dequeued': 3,
+ 'scheduler/dequeued/memory': 3,
+ 'scheduler/enqueued': 3,
+ 'scheduler/enqueued/memory': 3,
+ 'start_time': datetime.datetime(2017, 5, 8, 9, 1, 39, 264000)}
+2017-05-08 17:01:40 [scrapy.core.engine] INFO: Spider closed (finished)
+2017-05-08 17:09:29 [scrapy.utils.log] INFO: Scrapy 1.3.3 started (bot: movie250)
+2017-05-08 17:09:29 [scrapy.utils.log] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'movie250.spiders', 'FEED_URI': 'items.json', 'SPIDER_MODULES': ['movie250.spiders'], 'BOT_NAME': 'movie250', 'ROBOTSTXT_OBEY': True, 'FEED_FORMAT': 'json', 'LOG_FILE': 'scrapy.log'}
+2017-05-08 17:09:29 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats']
+2017-05-08 17:09:29 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'movie250.RotateUserAgentMiddleware.RotateUserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2017-05-08 17:09:29 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2017-05-08 17:09:29 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2017-05-08 17:09:29 [scrapy.core.engine] INFO: Spider opened
+2017-05-08 17:09:29 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-05-08 17:09:29 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2017-05-08 17:09:29 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://movie.douban.com/robots.txt> from <GET http://movie.douban.com/robots.txt>
+2017-05-08 17:09:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/robots.txt> (referer: None)
+2017-05-08 17:09:29 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://movie.douban.com/top250/> from <GET http://movie.douban.com/top250/>
+2017-05-08 17:09:29 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://movie.douban.com/top250> from <GET https://movie.douban.com/top250/>
+2017-05-08 17:09:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://movie.douban.com/top250> (referer: None)
+2017-05-08 17:09:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250>
+{'link': [u'https://movie.douban.com/subject/1292052/'],
+ 'quote': [u'\u5e0c\u671b\u8ba9\u4eba\u81ea\u7531\u3002'],
+ 'rank': [u'1'],
+ 'rate': [u'9.6', u'819309\u4eba\u8bc4\u4ef7'],
+ 'star': [],
+ 'title': [u'\u8096\u7533\u514b\u7684\u6551\u8d4e']}
+2017-05-08 17:09:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250>
+{'link': [u'https://movie.douban.com/subject/1295644/'],
+ 'quote': [u'\u602a\u8700\u9ecd\u548c\u5c0f\u841d\u8389\u4e0d\u5f97\u4e0d\u8bf4\u7684\u6545\u4e8b\u3002'],
+ 'rank': [u'2'],
+ 'rate': [u'9.4', u'786565\u4eba\u8bc4\u4ef7'],
+ 'star': [],
+ 'title': [u'\u8fd9\u4e2a\u6740\u624b\u4e0d\u592a\u51b7']}
+2017-05-08 17:09:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250>
+{'link': [u'https://movie.douban.com/subject/1291546/'],
+ 'quote': [u'\u98ce\u534e\u7edd\u4ee3\u3002'],
+ 'rank': [u'3'],
+ 'rate': [u'9.5', u'584466\u4eba\u8bc4\u4ef7'],
+ 'star': [],
+ 'title': [u'\u9738\u738b\u522b\u59ec']}
+2017-05-08 17:09:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250>
+{'link': [u'https://movie.douban.com/subject/1292720/'],
+ 'quote': [u'\u4e00\u90e8\u7f8e\u56fd\u8fd1\u73b0\u4ee3\u53f2\u3002'],
+ 'rank': [u'4'],
+ 'rate': [u'9.4', u'674860\u4eba\u8bc4\u4ef7'],
+ 'star': [],
+ 'title': [u'\u963f\u7518\u6b63\u4f20']}
+2017-05-08 17:09:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250>
+{'link': [u'https://movie.douban.com/subject/1292063/'],
+ 'quote': [u'\u6700\u7f8e\u7684\u8c0e\u8a00\u3002'],
+ 'rank': [u'5'],
+ 'rate': [u'9.5', u'391222\u4eba\u8bc4\u4ef7'],
+ 'star': [],
+ 'title': [u'\u7f8e\u4e3d\u4eba\u751f']}
+2017-05-08 17:09:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250>
+{'link': [u'https://movie.douban.com/subject/1291561/'],
+ 'quote': [u'\u6700\u597d\u7684\u5bab\u5d0e\u9a8f\uff0c\u6700\u597d\u7684\u4e45\u77f3\u8ba9\u3002 '],
+ 'rank': [u'6'],
+ 'rate': [u'9.2', u'626584\u4eba\u8bc4\u4ef7'],
+ 'star': [],
+ 'title': [u'\u5343\u4e0e\u5343\u5bfb']}
+2017-05-08 17:09:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250>
+{'link': [u'https://movie.douban.com/subject/1295124/'],
+ 'quote': [u'\u62ef\u6551\u4e00\u4e2a\u4eba\uff0c\u5c31\u662f\u62ef\u6551\u6574\u4e2a\u4e16\u754c\u3002'],
+ 'rank': [u'7'],
+ 'rate': [u'9.4', u'362308\u4eba\u8bc4\u4ef7'],
+ 'star': [],
+ 'title': [u'\u8f9b\u5fb7\u52d2\u7684\u540d\u5355']}
+2017-05-08 17:09:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250>
+{'link': [u'https://movie.douban.com/subject/1292722/'],
+ 'quote': [u'\u5931\u53bb\u7684\u624d\u662f\u6c38\u6052\u7684\u3002 '],
+ 'rank': [u'8'],
+ 'rate': [u'9.2', u'621023\u4eba\u8bc4\u4ef7'],
+ 'star': [],
+ 'title': [u'\u6cf0\u5766\u5c3c\u514b\u53f7']}
+2017-05-08 17:09:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250>
+{'link': [u'https://movie.douban.com/subject/3541415/'],
+ 'quote': [u'\u8bfa\u5170\u7ed9\u4e86\u6211\u4eec\u4e00\u573a\u65e0\u6cd5\u76d7\u53d6\u7684\u68a6\u3002'],
+ 'rank': [u'9'],
+ 'rate': [u'9.2', u'728997\u4eba\u8bc4\u4ef7'],
+ 'star': [],
+ 'title': [u'\u76d7\u68a6\u7a7a\u95f4']}
+2017-05-08 17:09:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250>
+{'link': [u'https://movie.douban.com/subject/2131459/'],
+ 'quote': [u'\u5c0f\u74e6\u529b\uff0c\u5927\u4eba\u751f\u3002'],
+ 'rank': [u'10'],
+ 'rate': [u'9.3', u'478741\u4eba\u8bc4\u4ef7'],
+ 'star': [],
+ 'title': [u'\u673a\u5668\u4eba\u603b\u52a8\u5458']}
+2017-05-08 17:09:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250>
+{'link': [u'https://movie.douban.com/subject/1292001/'],
+ 'quote': [u'\u6bcf\u4e2a\u4eba\u90fd\u8981\u8d70\u4e00\u6761\u81ea\u5df1\u575a\u5b9a\u4e86\u7684\u8def\uff0c\u5c31\u7b97\u662f\u7c89\u8eab\u788e\u9aa8\u3002 '],
+ 'rank': [u'11'],
+ 'rate': [u'9.2', u'574355\u4eba\u8bc4\u4ef7'],
+ 'star': [],
+ 'title': [u'\u6d77\u4e0a\u94a2\u7434\u5e08']}
+2017-05-08 17:09:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250>
+{'link': [u'https://movie.douban.com/subject/3793023/'],
+ 'quote': [u'\u82f1\u4fca\u7248\u61a8\u8c46\uff0c\u9ad8\u60c5\u5546\u7248\u8c22\u8033\u6735\u3002'],
+ 'rank': [u'12'],
+ 'rate': [u'9.1', u'634063\u4eba\u8bc4\u4ef7'],
+ 'star': [],
+ 'title': [u'\u4e09\u50bb\u5927\u95f9\u5b9d\u83b1\u575e']}
+2017-05-08 17:09:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250>
+{'link': [u'https://movie.douban.com/subject/3011091/'],
+ 'quote': [u'\u6c38\u8fdc\u90fd\u4e0d\u80fd\u5fd8\u8bb0\u4f60\u6240\u7231\u7684\u4eba\u3002'],
+ 'rank': [u'13'],
+ 'rate': [u'9.2', u'427038\u4eba\u8bc4\u4ef7'],
+ 'star': [],
+ 'title': [u'\u5fe0\u72ac\u516b\u516c\u7684\u6545\u4e8b']}
+2017-05-08 17:09:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250>
+{'link': [u'https://movie.douban.com/subject/1291549/'],
+ 'quote': [u'\u5929\u7c41\u4e00\u822c\u7684\u7ae5\u58f0\uff0c\u662f\u6700\u63a5\u8fd1\u4e0a\u5e1d\u7684\u5b58\u5728\u3002 '],
+ 'rank': [u'14'],
+ 'rate': [u'9.2', u'430010\u4eba\u8bc4\u4ef7'],
+ 'star': [],
+ 'title': [u'\u653e\u725b\u73ed\u7684\u6625\u5929']}
+2017-05-08 17:09:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250>
+{'link': [u'https://movie.douban.com/subject/1292213/'],
+ 'quote': [u'\u4e00\u751f\u6240\u7231\u3002'],
+ 'rank': [u'15'],
+ 'rate': [u'9.2', u'461830\u4eba\u8bc4\u4ef7'],
+ 'star': [],
+ 'title': [u'\u5927\u8bdd\u897f\u6e38\u4e4b\u5927\u5723\u5a36\u4eb2']}
+2017-05-08 17:09:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250>
+{'link': [u'https://movie.douban.com/subject/1291841/'],
+ 'quote': [u'\u5343\u4e07\u4e0d\u8981\u8bb0\u6068\u4f60\u7684\u5bf9\u624b\uff0c\u8fd9\u6837\u4f1a\u8ba9\u4f60\u5931\u53bb\u7406\u667a\u3002'],
+ 'rank': [u'16'],
+ 'rate': [u'9.2', u'327887\u4eba\u8bc4\u4ef7'],
+ 'star': [],
+ 'title': [u'\u6559\u7236']}
+2017-05-08 17:09:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250>
+{'link': [u'https://movie.douban.com/subject/1291560/'],
+ 'quote': [u'\u4eba\u4eba\u5fc3\u4e2d\u90fd\u6709\u4e2a\u9f99\u732b\uff0c\u7ae5\u5e74\u5c31\u6c38\u8fdc\u4e0d\u4f1a\u6d88\u5931\u3002'],
+ 'rank': [u'17'],
+ 'rate': [u'9.1', u'398824\u4eba\u8bc4\u4ef7'],
+ 'star': [],
+ 'title': [u'\u9f99\u732b']}
+2017-05-08 17:09:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250>
+{'link': [u'https://movie.douban.com/subject/1292064/'],
+ 'quote': [u'\u5982\u679c\u518d\u4e5f\u4e0d\u80fd\u89c1\u5230\u4f60\uff0c\u795d\u4f60\u65e9\u5b89\uff0c\u5348\u5b89\uff0c\u665a\u5b89\u3002'],
+ 'rank': [u'18'],
+ 'rate': [u'9.0', u'425293\u4eba\u8bc4\u4ef7'],
+ 'star': [],
+ 'title': [u'\u695a\u95e8\u7684\u4e16\u754c']}
+2017-05-08 17:09:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250>
+{'link': [u'https://movie.douban.com/subject/1300267/'],
+ 'quote': [u'Tomorrow is another day.'],
+ 'rank': [u'19'],
+ 'rate': [u'9.2', u'259922\u4eba\u8bc4\u4ef7'],
+ 'star': [],
+ 'title': [u'\u4e71\u4e16\u4f73\u4eba']}
+2017-05-08 17:09:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250>
+{'link': [u'https://movie.douban.com/subject/1291828/'],
+ 'quote': [u'\u90a3\u4e9b\u543b\u620f\uff0c\u90a3\u4e9b\u9752\u6625\uff0c\u90fd\u5728\u5f71\u9662\u7684\u9ed1\u6697\u91cc\u88ab\u6cea\u6c34\u51b2\u5237\u5f97\u65e0\u6bd4\u6e05\u6670\u3002'],
+ 'rank': [u'20'],
+ 'rate': [u'9.1', u'296906\u4eba\u8bc4\u4ef7'],
+ 'star': [],
+ 'title': [u'\u5929\u5802\u7535\u5f71\u9662']}
+2017-05-08 17:09:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250>
+{'link': [u'https://movie.douban.com/subject/1849031/'],
+ 'quote': [u'\u5e73\u6c11\u52b1\u5fd7\u7247\u3002 '],
+ 'rank': [u'21'],
+ 'rate': [u'8.9', u'514888\u4eba\u8bc4\u4ef7'],
+ 'star': [],
+ 'title': [u'\u5f53\u5e78\u798f\u6765\u6572\u95e8']}
+2017-05-08 17:09:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250>
+{'link': [u'https://movie.douban.com/subject/6786002/'],
+ 'quote': [u'\u6ee1\u6ee1\u6e29\u60c5\u7684\u9ad8\u96c5\u559c\u5267\u3002'],
+ 'rank': [u'22'],
+ 'rate': [u'9.1', u'348369\u4eba\u8bc4\u4ef7'],
+ 'star': [],
+ 'title': [u'\u89e6\u4e0d\u53ef\u53ca']}
+2017-05-08 17:09:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250>
+{'link': [u'https://movie.douban.com/subject/1292000/'],
+ 'quote': [u'\u90aa\u6076\u4e0e\u5e73\u5eb8\u86f0\u4f0f\u4e8e\u540c\u4e00\u4e2a\u6bcd\u4f53\uff0c\u5728\u7279\u5b9a\u7684\u65f6\u95f4\u4e92\u76f8\u5bf9\u5cd9\u3002'],
+ 'rank': [u'23'],
+ 'rate': [u'9.0', u'389715\u4eba\u8bc4\u4ef7'],
+ 'star': [],
+ 'title': [u'\u640f\u51fb\u4ff1\u4e50\u90e8']}
+2017-05-08 17:09:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250>
+{'link': [u'https://movie.douban.com/subject/1293182/'],
+ 'quote': [u'1957\u5e74\u7684\u7406\u60f3\u4e3b\u4e49\u3002 '],
+ 'rank': [u'24'],
+ 'rate': [u'9.3', u'161866\u4eba\u8bc4\u4ef7'],
+ 'star': [],
+ 'title': [u'\u5341\u4e8c\u6012\u6c49']}
+2017-05-08 17:09:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://movie.douban.com/top250>
+{'link': [u'https://movie.douban.com/subject/1307914/'],
+ 'quote': [u'\u9999\u6e2f\u7535\u5f71\u53f2\u4e0a\u6c38\u4e0d\u8fc7\u65f6\u7684\u6770\u4f5c\u3002'],
+ 'rank': [u'25'],
+ 'rate': [u'9.0', u'376976\u4eba\u8bc4\u4ef7'],
+ 'star': [],
+ 'title': [u'\u65e0\u95f4\u9053']}
+2017-05-08 17:09:30 [scrapy.core.engine] INFO: Closing spider (finished)
+2017-05-08 17:09:30 [scrapy.extensions.feedexport] INFO: Stored json feed (25 items) in: items.json
+2017-05-08 17:09:30 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 1499,
+ 'downloader/request_count': 5,
+ 'downloader/request_method_count/GET': 5,
+ 'downloader/response_bytes': 14524,
+ 'downloader/response_count': 5,
+ 'downloader/response_status_count/200': 2,
+ 'downloader/response_status_count/301': 3,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2017, 5, 8, 9, 9, 30, 198000),
+ 'item_scraped_count': 25,
+ 'log_count/DEBUG': 31,
+ 'log_count/INFO': 8,
+ 'response_received_count': 2,
+ 'scheduler/dequeued': 3,
+ 'scheduler/dequeued/memory': 3,
+ 'scheduler/enqueued': 3,
+ 'scheduler/enqueued/memory': 3,
+ 'start_time': datetime.datetime(2017, 5, 8, 9, 9, 29, 381000)}
+2017-05-08 17:09:30 [scrapy.core.engine] INFO: Spider closed (finished)
